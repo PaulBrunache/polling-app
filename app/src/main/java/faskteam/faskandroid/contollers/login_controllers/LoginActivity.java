@@ -122,12 +122,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                             String username = userData.getString("UserName");
                             int uID = userData.getInt("UserID");
                             String email = userData.getString("Email");
-                            String fbID = userData.optString("FacebookID", "");
-                            boolean isFacebookUser = (!fbID.isEmpty() || !fbID.toLowerCase().equals("null"));
 
                             String sessionID = userData.getString("Session");
                             User sessionUser = new User(uID, username, email);
-                            sessionUser.setIsFaceBookUser(isFacebookUser);
 
                             // check if there is a session running already..
                             if(Session.hasInstance()) {
@@ -402,4 +399,3 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 }
-
