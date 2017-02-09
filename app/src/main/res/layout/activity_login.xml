@@ -1,0 +1,492 @@
+<RelativeLayout
+    android:id="@+id/login_activity_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_off_white"
+    android:gravity="center_horizontal"
+    android:theme="@style/AppTheme.Login"
+    tools:context="faskteam.faskandroid.contollers.login_controllers.LoginActivity"
+    >
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp">
+
+            <View
+                android:id="@+id/login_activity_logo_bg"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@color/color_primary"
+                />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_alignBottom="@+id/login_activity_logo_bg"
+                android:alpha=".5"
+                android:scaleType="fitXY"
+                android:src="@drawable/logo_no_bubble_optimized"
+                android:tint="#dcf0f7"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3dp"
+                android:background="@drawable/box_shadow_bottom"
+                android:layout_below="@id/login_activity_logo_bg"
+                />
+
+            <ImageView
+                android:id="@+id/login_activity_logo"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/logo_optimized"
+                />
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/login_activity_logo"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="40dp"
+                android:paddingTop="40dp">
+
+                <EditText
+                    android:id="@+id/login_field_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:hint="@string/login_field_username"
+                    android:imeOptions="actionNext"/>
+
+                <EditText
+                    android:id="@+id/login_field_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="8dp"
+                    android:hint="@string/login_field_password"
+                    android:imeOptions="actionDone"
+                    android:inputType="textPassword"/>
+
+                <Button
+                    android:id="@+id/login_activity_button_login_sign_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="25dp"
+                    android:text="@string/login_button_sign_in"
+                    />
+
+                <TextView
+                    android:id="@+id/login_activity_textview_forgot_password"
+                    style="@style/AppTheme.TextView.Link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="0dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="8dp"
+                    android:clickable="true"
+                    android:padding="7dp"
+                    android:text="@string/login_forgot_password"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:baselineAligned="false"
+                    android:gravity="center">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.9"
+                        android:text="@string/login_dont_have_account"
+                        android:textStyle="bold"
+                        />
+
+                    <Button
+                        android:id="@+id/login_activity_button_sign_up"
+                        style="@style/AppTheme.Button.Accent"
+                        android:layout_width="0dp"
+                        android:layout_height="35dp"
+                        android:layout_weight="1"
+                        android:fontFamily="sans-serif-black"
+                        android:text="@string/login_button_sign_up"/>
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_off_white_dark"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:background="@color/color_off_white"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/login_or"
+                        />
+
+                </RelativeLayout>
+
+                <!--<com.facebook.login.widget.LoginButton-->
+                <!--android:id="@+id/facebook_btn"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginBottom="30dp" />-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/login_activity_button_facebook__signup"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".5"
+                        android:background="@color/color_facebook_official"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="@string/login_facebook_sign_up"
+                            android:textColor="@color/color_white"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:contentDescription="@string/login_facebook_icon_description"
+                            android:padding="6dp"
+                            android:src="@drawable/facebook_icon"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="@dimen/ui_element_spacing"
+                        android:layout_height="match_parent"/>
+
+                    <LinearLayout
+                        android:id="@+id/login_activity_button_facebook_signin"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_weight=".5"
+                        android:background="@color/color_facebook_official"
+                        android:clickable="true"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="5dp"
+                            android:layout_marginRight="5dp"
+                            android:text="Sign In"
+                            android:textColor="@color/color_white"
+                            android:textStyle="bold"
+                            />
+
+                        <ImageView
+                            android:layout_width="35dp"
+                            android:layout_height="35dp"
+                            android:contentDescription="@string/login_facebook_icon_description"
+                            android:padding="6dp"
+                            android:src="@drawable/facebook_icon"/>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/sign_up_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>
+<!--<RelativeLayout-->
+    <!--android:id="@+id/login_activity_container"-->
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/color_off_white"-->
+    <!--android:gravity="center_horizontal"-->
+    <!--android:theme="@style/AppTheme.Login"-->
+    <!--tools:context="faskteam.faskandroid.contollers.login_controllers.LoginActivity"-->
+    <!-->-->
+
+    <!--<View-->
+        <!--android:id="@+id/login_activity_logo_bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="170dp"-->
+        <!--android:background="@color/color_primary"-->
+        <!--/>-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:layout_alignBottom="@+id/login_activity_logo_bg"-->
+        <!--android:alpha=".5"-->
+        <!--android:scaleType="fitXY"-->
+        <!--android:src="@drawable/logo_no_bubble_optimized"-->
+        <!--android:tint="#dcf0f7"-->
+        <!--/>-->
+    <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="240dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_marginTop="-40dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:src="@drawable/logo_no_bubble_optimized"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:scaleType="fitCenter"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:tint="@color/color_accent"&ndash;&gt;-->
+    <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+    <!--<ImageView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="200dp"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:src="@drawable/logo_optimized"-->
+        <!--/>-->
+
+
+    <!--&lt;!&ndash; Login progress &ndash;&gt;-->
+    <!--<ProgressBar-->
+        <!--android:id="@+id/login_progress"-->
+        <!--style="?android:attr/progressBarStyleLarge"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="8dp"-->
+        <!--android:visibility="gone"/>-->
+
+    <!--<ScrollView-->
+        <!--android:id="@+id/login_form"-->
+        <!--android:layout_below="@id/login_activity_logo_bg"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!-->-->
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="250dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="center"-->
+            <!--android:orientation="vertical"-->
+            <!--android:paddingBottom="40dp"-->
+            <!--android:paddingTop="120dp">-->
+
+            <!--&lt;!&ndash;<ImageView&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="150dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:src="@drawable/logo_optimized"&ndash;&gt;-->
+            <!--&lt;!&ndash;/>&ndash;&gt;-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/login_field_username"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginTop="0dp"-->
+                <!--android:hint="@string/login_field_username"-->
+                <!--android:imeOptions="actionNext"/>-->
+
+            <!--<EditText-->
+                <!--android:id="@+id/login_field_password"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:hint="@string/login_field_password"-->
+                <!--android:imeOptions="actionDone"-->
+                <!--android:inputType="textPassword"/>-->
+
+            <!--<Button-->
+                <!--android:id="@+id/login_activity_button_login_sign_in"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="35dp"-->
+                <!--android:layout_marginTop="25dp"-->
+                <!--android:text="@string/login_button_sign_in"-->
+                <!--/>-->
+
+            <!--<TextView-->
+                <!--android:id="@+id/login_activity_textview_forgot_password"-->
+                <!--style="@style/AppTheme.TextView.Link"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:clickable="true"-->
+                <!--android:padding="7dp"-->
+                <!--android:text="@string/login_forgot_password"/>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="8dp"-->
+                <!--android:baselineAligned="false"-->
+                <!--android:gravity="center">-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_weight="1.9"-->
+                    <!--android:text="@string/login_dont_have_account"-->
+                    <!--android:textStyle="bold"-->
+                    <!--/>-->
+
+                <!--<Button-->
+                    <!--android:id="@+id/login_activity_button_sign_up"-->
+                    <!--style="@style/AppTheme.Button.Accent"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="35dp"-->
+                    <!--android:layout_weight="1"-->
+                    <!--android:fontFamily="sans-serif-black"-->
+                    <!--android:text="@string/login_button_sign_up"/>-->
+
+            <!--</LinearLayout>-->
+
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp">-->
+
+                <!--<View-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="1dp"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:background="@color/color_off_white_dark"/>-->
+
+                <!--<TextView-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerInParent="true"-->
+                    <!--android:background="@color/color_off_white"-->
+                    <!--android:paddingLeft="20dp"-->
+                    <!--android:paddingRight="20dp"-->
+                    <!--android:text="@string/login_or"-->
+                    <!--/>-->
+
+            <!--</RelativeLayout>-->
+
+            <!--&lt;!&ndash;<com.facebook.login.widget.LoginButton&ndash;&gt;-->
+            <!--&lt;!&ndash;android:id="@+id/facebook_btn"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_width="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_gravity="center_horizontal"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginTop="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;android:layout_marginBottom="30dp" />&ndash;&gt;-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/login_activity_button_facebook__signup"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight=".5"-->
+                    <!--android:background="@color/color_facebook_official"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginEnd="5dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:text="@string/login_facebook_sign_up"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textStyle="bold"-->
+                        <!--/>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:contentDescription="@string/login_facebook_icon_description"-->
+                        <!--android:padding="6dp"-->
+                        <!--android:src="@drawable/facebook_icon"/>-->
+
+                <!--</LinearLayout>-->
+
+                <!--<View-->
+                    <!--android:layout_width="@dimen/ui_element_spacing"-->
+                    <!--android:layout_height="match_parent"/>-->
+
+                <!--<LinearLayout-->
+                    <!--android:id="@+id/login_activity_button_facebook_signin"-->
+                    <!--android:layout_width="0dp"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginTop="10dp"-->
+                    <!--android:layout_weight=".5"-->
+                    <!--android:background="@color/color_facebook_official"-->
+                    <!--android:clickable="true"-->
+                    <!--android:gravity="center"-->
+                    <!--android:orientation="horizontal">-->
+
+                    <!--<TextView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_marginEnd="5dp"-->
+                        <!--android:layout_marginRight="5dp"-->
+                        <!--android:text="Sign In"-->
+                        <!--android:textColor="@color/color_white"-->
+                        <!--android:textStyle="bold"-->
+                        <!--/>-->
+
+                    <!--<ImageView-->
+                        <!--android:layout_width="35dp"-->
+                        <!--android:layout_height="35dp"-->
+                        <!--android:contentDescription="@string/login_facebook_icon_description"-->
+                        <!--android:padding="6dp"-->
+                        <!--android:src="@drawable/facebook_icon"/>-->
+
+                <!--</LinearLayout>-->
+
+
+            <!--</LinearLayout>-->
+
+
+        <!--</LinearLayout>-->
+    <!--</ScrollView>-->
+
+    <!--<FrameLayout-->
+        <!--android:id="@+id/sign_up_container"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"/>-->
+
+<!--</RelativeLayout>-->

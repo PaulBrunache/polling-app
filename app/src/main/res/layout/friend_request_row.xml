@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/poll_item_shadow_bg"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin"
+                android:layout_marginBottom="@dimen/ui_element_spacing_small"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="username"
+        android:layout_toRightOf="@+id/user_avatar"
+        android:layout_toEndOf="@+id/user_avatar"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_accept"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_check_50dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:tint="@color/color_primary"
+        android:background="@color/color_clear"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:id="@+id/btn_decline"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:padding="5dp"
+        android:src="@drawable/ic_close_50dp"
+        android:layout_toStartOf="@id/btn_accept"
+        android:layout_toLeftOf="@+id/btn_accept"
+        android:layout_marginRight="@dimen/ui_element_spacing"
+        android:layout_marginEnd="@dimen/ui_element_spacing"
+        android:tint="@color/color_accent"
+        android:background="@color/color_clear"
+        android:scaleType="fitCenter"
+        />
+
+</RelativeLayout>

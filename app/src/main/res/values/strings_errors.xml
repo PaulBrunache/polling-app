@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="regis_password_min_len">Password should contain at least 8 characters</string>
+
+
+
+    <string name="require_all_fields">All Fields are required.</string>
+
+
+</resources>

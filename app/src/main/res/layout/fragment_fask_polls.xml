@@ -1,0 +1,29 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="faskteam.faskandroid.contollers.main_controllers.MyPollsFragment"
+                android:background="@color/ui_background">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fask_polls_swipe_layout"
+        >
+
+        <include
+            android:id="@+id/poll_list"
+            layout="@layout/generic_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="4dp"
+        android:background="@drawable/box_shadow_bottom"
+        />
+
+</RelativeLayout>

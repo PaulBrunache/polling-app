@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/ui_background"
+                tools:context="faskteam.faskandroid.contollers.main_controllers.social.GroupsFragment">
+
+
+    <include
+        android:id="@+id/list_group"
+        layout="@layout/generic_recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+
+
+    <ImageView
+        android:id="@+id/fab_add_btn_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/window_padding"
+        android:layout_marginEnd="@dimen/window_padding"
+        android:layout_marginRight="@dimen/window_padding"
+        android:clickable="true"
+        android:contentDescription="@string/create_poll_btn_desc"
+        android:src="@drawable/add_button2"/>
+
+</RelativeLayout>

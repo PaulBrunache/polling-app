@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="faskteam.faskandroid.PollCreatePollFragment"
+    android:id="@+id/poll_create_poll_fragment">
+
+
+    <EditText
+        android:id="@+id/poll_question"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center"
+        android:layout_below="@+id/poll_create_tabs"
+        style="@style/AppTheme.EditText"
+        android:hint="@string/poll_question_hint"/>
+
+    <!--<LinearLayout-->
+        <!--android:id="@+id/custom_scrollview"-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_below="@id/poll_question">-->
+        <ScrollView
+            android:id="@+id/poll_create_scroll_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:overScrollMode="never"
+            android:layout_below="@+id/poll_question"
+            android:layout_above="@+id/choice_type_radio_group">
+
+            <LinearLayout
+                android:id="@+id/poll_choice_view"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/poll_choice_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    style="@style/AppTheme.EditText"
+                    android:hint="@string/poll_choice_hint" />
+            </LinearLayout>
+        </ScrollView>
+    <!--</LinearLayout>-->
+
+
+
+    <RadioGroup
+        android:id="@+id/choice_type_radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@+id/add_button_group">
+        <RadioButton
+            android:id="@+id/choice_type_radio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_type_radio"/>
+        <RadioButton
+            android:id="@+id/choice_type_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_type_check"/>
+        <RadioButton
+            android:id="@+id/choice_type_rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_type_rate"/>
+        <RadioButton
+            android:id="@+id/choice_type_multimedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/choice_type_multimedia"/>
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/add_button_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/add_more_choices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/poll_create_add_more_choices" />
+
+        <Button
+            android:id="@+id/add_picture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Add pictures" />
+    </LinearLayout>
+</RelativeLayout>

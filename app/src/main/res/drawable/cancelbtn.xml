@@ -1,0 +1,64 @@
+<!-- res/drawable/heart.xml -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:width="100dp"
+
+    android:height="100dp"
+    android:viewportHeight="10"
+    android:viewportWidth="10"
+    tools:targetApi="21">
+
+    <!-- draw a path -->
+    <path
+
+        android:pathData="M1.0,1.0
+                        L9.0,9.0
+                        M9.0,1.0
+                        L1.0,9.0
+                        "
+        android:strokeColor="#fafafa"
+        android:strokeLineCap="butt"
+        android:strokeLineJoin="miter"
+        android:strokeWidth="1.5"
+
+        />
+</vector>
+
+    <!--&lt;!&ndash; res/drawable/heart.xml &ndash;&gt;-->
+<!--<vector xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+        <!--xmlns:tools="http://schemas.android.com/tools"-->
+        <!--android:width="100dp"-->
+
+        <!--android:height="100dp"-->
+        <!--android:viewportHeight="10"-->
+        <!--android:viewportWidth="10"-->
+        <!--app:vc_viewportHeight="10"-->
+        <!--app:vc_viewportWidth="10"-->
+        <!--tools:targetApi="21">-->
+
+<!--&lt;!&ndash; draw a path &ndash;&gt;-->
+<!--<path-->
+
+    <!--android:pathData="M1.0,1.0-->
+                        <!--L9.0,9.0-->
+                        <!--M9.0,1.0-->
+                        <!--L1.0,9.0-->
+                        <!--"-->
+    <!--android:strokeColor="@color/color_white"-->
+    <!--android:strokeLineCap="butt"-->
+    <!--android:strokeLineJoin="miter"-->
+    <!--android:strokeWidth="1.5"-->
+    <!--app:vc_pathData="M1.0,1.0-->
+                        <!--L9.0,9.0-->
+                        <!--M9.0,1.0-->
+                        <!--L1.0,9.0-->
+                        <!--"-->
+    <!--app:vc_strokeColor="@color/color_white"-->
+    <!--app:vc_strokeLineCap="butt"-->
+    <!--app:vc_strokeLineJoin="miter"-->
+
+    <!--app:vc_strokeWidth="1.5"-->
+
+    <!--/>-->
+<!--</vector>-->

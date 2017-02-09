@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_my_profile"
+        android:icon="@drawable/ic_account_circle_24dp"
+        android:checkable="true"
+        android:title="@string/nav_profile" />
+    <item
+        android:id="@+id/nav_my_polls"
+        android:icon="@drawable/ic_messenger_16dp"
+        android:checked="true"
+        android:checkable="true"
+        android:title="@string/nav_my_polls"
+        />
+    <item
+        android:id="@+id/nav_fask_polls"
+        android:icon="@drawable/ic_question_answer_24dp"
+        android:checkable="true"
+        android:title="@string/nav_fask_polls"
+        />
+    <item
+        android:id="@+id/nav_nearby_polls"
+        android:icon="@drawable/ic_location_on_24dp"
+        android:checkable="true"
+        android:title="@string/nav_nearby_polls" />
+    <item
+        android:id="@+id/nav_friends_and_groups"
+        android:icon="@drawable/ic_people_24dp"
+        android:checkable="true"
+        android:title="@string/nav_friends_and_groups" />
+
+    <!--<item-->
+        <!--android:id="@+id/nav_rank"-->
+        <!--android:icon="@drawable/ic_star_24dp"-->
+        <!--android:checkable="true"-->
+        <!--android:title="@string/nav_rank" />-->
+    <!--<item-->
+        <!--android:id="@+id/nav_settings"-->
+        <!--android:icon="@drawable/ic_settings_24dp"-->
+        <!--android:checkable="true"-->
+        <!--android:title="@string/nav_setting" />-->
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_power_settings_new_24dp"
+        android:checkable="true"
+        android:title="@string/nav_logout" />
+</menu>

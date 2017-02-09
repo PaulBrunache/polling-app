@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary">
+
+
+    <TextView
+        android:id="@+id/profile_username"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="24sp"
+        style="@style/AppTheme.TextAppearance.ExtraLarge"
+        android:textColor="@color/color_white"
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/profile_username"
+        android:src="@drawable/user_icon"
+        android:clickable="true"/>
+
+
+
+    <TextView
+        android:id="@+id/profile_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif-medium"
+        style="@style/AppTheme.TextAppearance.Medium"
+        android:textColor="@color/color_white"
+        android:text="0 points"/>
+
+    <TextView
+        android:id="@+id/profile_asked_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/profile_points"
+        android:fontFamily="sans-serif-medium"
+        style="@style/AppTheme.TextAppearance.Medium"
+        android:textColor="@color/color_white"
+        android:text="0 points"/>
+
+    <TextView
+        android:id="@+id/profile_answered_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@id/profile_asked_points"
+        android:fontFamily="sans-serif-medium"
+        style="@style/AppTheme.TextAppearance.Medium"
+        android:textColor="@color/color_white"
+        android:text="0 points"/>
+
+
+
+    <LinearLayout
+        android:id="@+id/profile_connect_facebook"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_facebook_official"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/profile_fb_connect_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/profile_connect_facebook"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:textStyle="bold"
+            android:textColor="@color/color_white" />
+
+        <ImageView
+            android:padding="6dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:contentDescription="@string/login_facebook_icon_description"
+            android:src="@drawable/facebook_icon"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_icons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:layout_below="@id/profile_answered_points"
+        android:background="@color/color_accent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/icon_choose"
+            android:gravity="center"
+            style="@style/AppTheme.TextAppearance.Medium"
+            android:textColor="@color/color_white" />
+
+        <RelativeLayout
+            android:id="@+id/icon_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/icon_option_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bumblebee_100"
+                android:clickable="true"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/icon_option2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/cat_100"
+                android:clickable="true"
+                android:layout_toRightOf="@id/icon_option_1"/>
+
+            <ImageView
+                android:id="@+id/icon_option3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/panda_100"
+                android:clickable="true"
+                android:layout_toRightOf="@id/icon_option2"/>
+
+            <ImageView
+                android:id="@+id/icon_option4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/year_of_monkey_100"
+                android:clickable="true"
+                android:layout_toRightOf="@id/icon_option3"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/profile_acheivements"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/profile_icons"
+        android:layout_above="@id/profile_connect_facebook"
+        android:background="@color/color_off_white" />
+</RelativeLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FAsk</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="ok">OK</string>
+
+    <!-- nav drawer menu -->
+    <string name="nav_main">Main</string>
+    <string name="nav_my_polls">My Polls</string>
+    <string name="nav_fask_polls">FAsk Polls</string>
+    <string name="nav_global_polls">Global Polls</string>
+    <string name="nav_nearby_polls">Nearby Polls</string>
+    <string name="nav_friends">Find Friends</string>
+    <string name="nav_friends_and_groups">Friends and Groups</string>
+    <string name="nav_rank">Rank</string>
+    <string name="nav_setting">Settings</string>
+    <string name="nav_profile">My Profile</string>
+    <!-- END nav drawer menu -->
+
+    <string name="nav_drawer_open">Open</string>
+    <string name="nav_drawer_close">Close</string>
+    <string name="login_field_username">Username</string>
+    <string name="login_field_password">Password</string>
+    <string name="login_button_sign_in">Sign In</string>
+    <string name="login_forgot_password">Forgot your password?</string>
+    <string name="login_dont_have_account">Don\'t have an account?</string>
+    <string name="login_button_sign_up">Sign up</string>
+    <string name="login_or">or</string>
+    <string name="login_facebook_sign_up">Sign Up</string>
+    <string name="login_facebook_icon_description">Login in or sign up with Facebook</string>
+    <string name="create_poll_btn_desc">Create new poll</string>
+    <string name="title_activity_poll_create">PollCreateActivity</string>
+
+    <!-- Poll Creation Screen -->
+    <string name="poll_create_cancel">\u2715</string>
+    <string name="poll_create_accept">\u2713</string>
+    <string name="poll_create_title">Poll Create</string>
+    <string name="poll_create_add_more_choices">Add Choice \u2795</string>
+    <string name="poll_question_hint">Enter Question to Poll Here.</string>
+    <string name="poll_choice_hint">Enter Choice Here.</string>
+    <string name="open_to_others">Allow Others to Add Choices?</string>
+    <string-array name="poll_create_tabs">
+        <item>Poll Info</item>
+        <item>Group Info</item>
+        <item>Location Info</item>
+    </string-array>
+    <string name="choice_type_radio">Radio</string>
+    <string name="choice_type_check">Checkbox</string>
+    <string name="choice_type_rate">Rate</string>
+    <string name="choice_type_multimedia">Multimedia</string>
+    <string name="choice_type_group_hint">Radio: Choose one. Checkbox: Choose many. Rate: Choose order</string>
+    <string name="group_choose_text">Select a Group to Poll</string>
+    <string name="group_location_text">Add a Location to Poll</string>
+    <string name="poll_create_date_picker">Choose when to close Poll</string>
+    <string name="current_location">Poll Current Location?</string>
+    <string name="search_loc_to_poll">Search for a different Location to Poll</string>
+    <string name="open_to_public">Allow public access to this Poll?</string>
+    <string name="regis_password_format">Password must contain at least one of each of the following:\nUppercase AND lowercase alphabet\nNumbers\nSpecial Characters</string>
+    <string name="regis_password_verify">\"Password\" and \"Verify Password\" fields do not match</string>
+    <string name="regis_white_space">Empty or white space characters are not permitted</string>
+    <string name="general_error_msg">Sorry. An error occurred. Please try again</string>
+
+
+    <string name="nav_logout">Logout</string>
+
+    <string name="profile_asked_points">Asked Points: %d</string>
+    <string name="profile_answered_points">Answered Points: %d</string>
+    <string name="profile_total_points">Total Points: %d</string>
+
+    <string name="profile_connect_facebook">Connect your profile to Facebook</string>
+
+    <string name="group_name">Name your group!</string>
+    <string name="group_members_string">Group members</string>
+    <string name="group_member_add">Add friend by username</string>
+
+    <string name="gcm_default_sender_id">212484257335</string>
+    <string name="facebook_app_id">889863111121056</string>
+    <string name="title_activity_answer_poll">AnswerPollActivity</string>
+
+    <string name="icon_choose">Choose new icon.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

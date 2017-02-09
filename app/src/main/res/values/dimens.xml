@@ -1,0 +1,16 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="ui_element_spacing">10dp</dimen>
+    <dimen name="window_padding">20dp</dimen>
+    <dimen name="ui_element_spacing_small">2dp</dimen>
+    <dimen name="ui_element_spacing_large">15dp</dimen>
+    <dimen name="FAB_diameter">50dp</dimen>
+    <dimen name="FAB_shadow_diameter">54dp</dimen>
+
+    <!--Edit text margins -->
+    <dimen name="poll_create_edit_text_margin">10dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="actionbar_size">52dp</dimen>
+</resources>

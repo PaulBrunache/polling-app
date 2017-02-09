@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ui_background"
+                android:orientation="vertical"
+                android:padding="@dimen/activity_horizontal_margin"
+    >
+
+    <TextView
+        android:id="@+id/groupname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="groupname"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/clic_view_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/groupname"
+        android:textColor="@color/color_text_primary_light"
+        android:text="Click to view group"
+        />
+
+
+
+    <TextView
+        android:id="@+id/num_group_member"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="2 members"
+        />
+
+
+
+    <!-- hide remove button until user wants to remove members -->
+    <ImageView
+        android:id="@+id/remove_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/cancelbtn"
+        android:visibility="gone"
+        android:tint="@color/color_accent"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

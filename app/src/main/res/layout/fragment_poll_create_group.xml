@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="faskteam.faskandroid.PollCreateGroupFragment"
+    android:id="@+id/poll_create_group_fragment">
+
+    <TextView
+        android:id="@+id/group_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans_serif"
+        android:textSize="12sp"
+        android:textColor="@color/color_text_primary_light"
+        android:text="@string/group_choose_text"
+        android:layout_below="@id/poll_create_tabs"/>
+
+    <CheckBox
+        android:id="@+id/public_private"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/open_to_others"
+        android:text="@string/open_to_public"/>
+
+    <CheckBox
+        android:id="@id/open_to_others"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_above="@+id/poll_create_date_picker"
+        android:text="@string/open_to_others"/>
+
+    <Button
+        android:id="@id/poll_create_date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/poll_create_date_picker"
+        android:layout_alignParentBottom="true"/>
+
+    <ListView
+        android:id="@+id/group_choose_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="333dp"
+        android:layout_below="@id/group_choose"
+        android:layout_above="@id/public_private"/>
+
+</RelativeLayout>

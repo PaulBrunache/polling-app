@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!--<color name="color_primary_light">#206e79</color>-->
+    <!--<color name="color_primary_dark">#154c52</color>-->
+    <!--<color name="color_primary">#154c52</color>-->
+    <!--<color name="color_primary_dark">#144146</color>-->
+    <!--<color name="color_primary_dark">#123a3e</color>-->
+
+    <color name="color_primary_light">#64F8F8</color>
+    <!--<color name="color_primary_dark">#154c52</color>-->
+    <color name="color_primary">#389797</color>
+    <!--<color name="color_primary_dark">#144146</color>-->
+    <!--<color name="color_primary_dark">#226666</color>-->
+    <color name="color_primary_dark">#2d7676</color>
+    <color name="color_accent">#ff9f80</color>
+    <color name="color_accent_dark">#d78470</color>
+    <!--<color name="color_accent">#F8A159</color>-->
+    <!--<color name="color_accent_dark">#AA6C39</color>-->
+
+    <color name="color_clear">#00ffffff</color>
+    <color name="color_shadow">#33000000</color>
+
+    <color name="color_darker_grey">#222</color>
+    <color name="color_dark_grey">#333</color>
+    <color name="color_light_grey">#b9b9b9</color>
+    <color name="color_white">#fafafa</color>
+    <color name="color_off_white">#f7f5f1</color>
+    <color name="color_off_white_dark">#eae6e1</color>
+
+
+
+    <color name="color_text_light_brown">#c3baae</color>
+    <color name="color_text_primary">#555</color>
+    <color name="color_text_primary_light">#888</color>
+    <color name="color_text_white">#fafafa</color>
+
+
+    
+    <color name="color_facebook_official">#3B5998</color>
+    <color name="ui_background">#eeeeee</color>
+    <color name="poll_list_item">#eeeeee</color>
+
+    <color name="ui_bg_full_shadow">#11000000</color>
+
+    <color name="color_white_50_o">#88fafafa</color>
+
+
+
+
+
+</resources>

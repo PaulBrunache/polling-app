@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <!--<item>-->
+        <!--<shape android:shape="oval">-->
+            <!--<solid android:color="@color/color_primary"/>-->
+            <!--<size android:height="@dimen/FAB_diameter"-->
+                <!--android:width="@dimen/FAB_diameter"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item android:top="14dp" android:left="23dp" android:bottom="14dp" android:right="23dp">-->
+        <!--<shape>-->
+            <!--<corners android:radius="0dp" />-->
+            <!--<solid android:color="@color/color_white" />-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <!--<item android:top="23dp" android:left="14dp" android:bottom="23dp" android:right="14dp">-->
+        <!--<shape>-->
+            <!--<corners android:radius="0dp" />-->
+            <!--<solid android:color="@color/color_white"/>-->
+        <!--</shape>-->
+    <!--</item>-->
+
+    <item android:height="25dp" android:width="25dp">
+        <shape android:shape="line">
+            <stroke android:color="@color/color_white"
+                android:width="5dp"/>
+            <solid android:color="@color/color_white"/>
+        </shape>
+    </item>
+
+
+
+    <item android:height="25dp" android:width="25dp">
+        <rotate android:fromDegrees="90" android:toDegrees="90">
+            <shape android:shape="line">
+                <stroke android:color="@color/color_white"
+                    android:width="5dp"/>
+                <solid android:color="@color/color_white"/>
+
+            </shape>
+        </rotate>
+
+    </item>
+
+</layer-list>

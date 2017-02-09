@@ -1,0 +1,30 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="faskteam.faskandroid.contollers.main_controllers.PollCreateActivity"
+    android:focusableInTouchMode="true"
+    android:id="@+id/poll_create_container"
+    >
+
+        <include
+            android:id="@+id/poll_create_toolbar"
+            layout="@layout/poll_create_custom_action_bar" />
+
+        <faskteam.faskandroid.utilities.SlidingTabLayout
+            android:id="@+id/poll_create_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/poll_create_toolbar"
+            />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/poll_create_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/poll_create_tabs"
+            />
+
+
+</RelativeLayout>

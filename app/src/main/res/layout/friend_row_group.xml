@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/ui_background"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    android:clickable="true"
+    android:layout_marginBottom="@dimen/ui_element_spacing_small"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_avatar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user_icon"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="username"
+        android:layout_toRightOf="@+id/user_avatar"
+        android:layout_toEndOf="@+id/user_avatar"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:textStyle="bold"
+        />
+
+    <!-- hide remove button until user wants to remove members -->
+    <ImageView
+        android:id="@+id/remove_btn"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/cancelbtn"
+        android:visibility="gone"
+        android:tint="@color/color_accent"
+        android:clickable="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:id="@+id/add_btn"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:padding="5dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/checkbtn"
+        android:visibility="gone"
+        android:tint="@color/color_accent"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

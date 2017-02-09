@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/ui_background"
+              tools:context="faskteam.faskandroid.contollers.main_controllers.social.TabFriendsFragment">
+
+    <RelativeLayout
+        android:id="@+id/search_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/ui_background"
+        >
+
+        <ImageView
+            android:id="@+id/search_friends_btn_search"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_search_48dp"
+            android:tint="@color/color_light_grey"/>
+
+        <ImageView
+            android:id="@+id/search_friends_btn_clear"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_close_50dp"
+            android:layout_toLeftOf="@+id/search_friends_btn_search"
+            android:layout_toStartOf="@+id/search_friends_btn_search"
+            android:visibility="gone"
+            android:tint="@color/color_light_grey"/>
+
+        <EditText
+            android:id="@+id/search_friends_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@style/AppTheme.EditText"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingStart="@dimen/activity_horizontal_margin"
+            android:paddingEnd="0dp"
+            android:paddingRight="0dp"
+            android:imeOptions="actionDone"
+            android:hint="Search FAsk users..."
+            android:layout_toLeftOf="@+id/search_friends_btn_clear"
+            android:layout_toStartOf="@+id/search_friends_btn_clear"
+            />
+    </RelativeLayout>
+    
+    <include
+        android:id="@+id/search_friends_list"
+        android:layout_below="@+id/search_container"
+        layout="@layout/generic_recycler_view"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"/>
+
+
+</RelativeLayout>

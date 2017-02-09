@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/color_white"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            tools:context="faskteam.faskandroid.contollers.main_controllers.AnswerPollActivity"
+            tools:showIn="@layout/activity_answer_poll"
+    >
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_vertical_margin"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/poll_creator_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:src="@drawable/user_icon"/>
+
+    <TextView
+        android:id="@+id/poll_creator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/ui_element_spacing"
+        android:layout_marginStart="@dimen/ui_element_spacing"
+        android:layout_marginTop="@dimen/ui_element_spacing_small"
+        android:layout_toEndOf="@+id/poll_creator_avatar"
+        android:layout_toRightOf="@+id/poll_creator_avatar"
+        android:fontFamily="sans-serif-medium"
+        style="@style/AppTheme.TextAppearance.Large"
+        android:text="Lorem Ipsum"/>
+
+    <TextView
+        android:id="@+id/poll_time_remaining"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/poll_creator"
+        android:layout_alignStart="@+id/poll_creator"
+        android:layout_below="@+id/poll_creator"
+        android:layout_marginTop="@dimen/ui_element_spacing_small"
+        android:textColor="@color/color_text_primary_light"
+        style="@style/AppTheme.TextAppearance.Small"
+        android:text="13 hrs"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/poll_creator_avatar"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/poll_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_element_spacing"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/poll_creator_avatar"
+        android:text="Whats the best place to pick up gourmet begals near downtown Atlanta?"
+        android:textColor="@color/color_primary"
+        android:fontFamily="sans-serif-medium"
+        style="@style/AppTheme.TextAppearance.Large"
+        />
+
+
+    <TextView
+        android:id="@+id/poll_body"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/ui_element_spacing"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_below="@+id/poll_question"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. "
+        android:textColor="@color/color_text_primary_light"
+        style="@style/AppTheme.TextAppearance.Small"
+        />
+
+    <com.github.mikephil.charting.charts.HorizontalBarChart
+        android:id="@+id/chart"
+        android:layout_below="@+id/poll_body"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="@dimen/ui_element_spacing_large"
+        />
+
+    <!--<TextView-->
+        <!--android:id="@+id/poll_tag_1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginTop="@dimen/ui_element_spacing_large"-->
+        <!--android:layout_below="@+id/chart"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_alignParentStart="true"-->
+        <!--android:layout_marginLeft="@dimen/activity_horizontal_margin"-->
+        <!--android:layout_marginStart="@dimen/activity_horizontal_margin"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:text="tag"-->
+        <!--android:background="@color/ui_background"-->
+        <!--android:textColor="@color/color_text_primary_light"-->
+        <!--style="@style/AppTheme.TextAppearance.Small"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/poll_tag_2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignTop="@+id/poll_tag_1"-->
+        <!--android:layout_toRightOf="@+id/poll_tag_1"-->
+        <!--android:layout_toEndOf="@+id/poll_tag_1"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="@dimen/ui_element_spacing"-->
+        <!--android:layout_marginStart="@dimen/ui_element_spacing"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:text="tag"-->
+        <!--android:background="@color/ui_background"-->
+        <!--android:textColor="@color/color_text_primary_light"-->
+        <!--style="@style/AppTheme.TextAppearance.Small"-->
+        <!--/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/poll_tag_3"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_alignTop="@+id/poll_tag_1"-->
+        <!--android:layout_toRightOf="@+id/poll_tag_2"-->
+        <!--android:layout_toEndOf="@+id/poll_tag_2"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_marginLeft="@dimen/ui_element_spacing"-->
+        <!--android:layout_marginStart="@dimen/ui_element_spacing"-->
+        <!--android:paddingLeft="15dp"-->
+        <!--android:paddingRight="15dp"-->
+        <!--android:text="tag"-->
+        <!--android:background="@color/ui_background"-->
+        <!--android:textColor="@color/color_text_primary_light"-->
+        <!--style="@style/AppTheme.TextAppearance.Small"-->
+        <!--/>-->
+
+    <View
+        android:id="@+id/section_div"
+        android:layout_below="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/ui_element_spacing"
+        android:background="@color/ui_background"/>
+
+    <TextView
+        android:id="@+id/poll_votes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/ui_element_spacing"
+        android:layout_below="@+id/section_div"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginStart="@dimen/activity_horizontal_margin"
+        android:text="0"
+        android:textColor="@color/color_text_primary"
+        style="@style/AppTheme.TextAppearance.ExtraLarge"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/poll_votes"
+        android:layout_toRightOf="@+id/poll_votes"
+        android:layout_toEndOf="@+id/poll_votes"
+        android:layout_marginLeft="5dp"
+        android:layout_marginStart="5dp"
+        android:text="votes"
+        android:textColor="@color/color_text_primary_light"
+        style="@style/AppTheme.TextAppearance.Small"
+        />
+
+    <TextView
+        android:id="@+id/poll_last_activity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/poll_votes"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:text=""
+        android:textColor="@color/color_text_primary_light"
+        style="@style/AppTheme.TextAppearance.Small"
+        />
+
+    <TextView
+        android:id="@+id/poll_last_activity_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/poll_votes"
+        android:layout_toLeftOf="@+id/poll_last_activity"
+        android:layout_toStartOf="@+id/poll_last_activity"
+        android:gravity="center"
+        android:layout_marginRight="5dp"
+        android:layout_marginEnd="5dp"
+        android:text=""
+        android:textColor="@color/color_text_primary"
+        style="@style/AppTheme.TextAppearance.ExtraLarge"
+        />
+
+    <TextView
+        android:id="@+id/poll_button_answer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poll_last_activity_value"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_primary"
+        android:textStyle="bold"
+        android:text="Answer Poll"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/ui_element_spacing_large"
+        android:layout_marginBottom="25dp"
+        android:padding="@dimen/ui_element_spacing_large"
+        />
+
+    <TextView
+        android:id="@+id/poll_button_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/poll_last_activity_value"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/color_primary"
+        android:textStyle="bold"
+        android:text="Close Poll"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_marginTop="@dimen/ui_element_spacing_large"
+        android:layout_marginBottom="25dp"
+        android:padding="@dimen/ui_element_spacing_large"
+        android:visibility="gone"
+        />
+
+    <!--<TextView-->
+    <!--android:id="@+id/poll_button_back"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignTop="@+id/poll_button_answer"-->
+    <!--android:layout_toLeftOf="@+id/poll_button_answer"-->
+    <!--android:layout_toStartOf="@+id/poll_button_answer"-->
+    <!--android:textColor="@color/color_primary"-->
+    <!--android:textStyle="bold"-->
+    <!--android:text="Back"-->
+    <!--android:padding="@dimen/ui_element_spacing_large"-->
+    <!--/>-->
+
+</RelativeLayout>
+
+
+</ScrollView>
